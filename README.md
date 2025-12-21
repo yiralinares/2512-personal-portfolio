@@ -15,3 +15,8 @@ For this project, you will build a personal portfolio site, a static website whe
 - JavaScript
 - Git and GitHub
 - Command line and file navigation
+
+##Scope:
+- HTML: Forms
+- CSS: Hover
+- Javascript: 2 interactive features: Light/Dark mode, Filter projects.
