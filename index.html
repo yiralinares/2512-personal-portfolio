@@ -13,7 +13,8 @@
 
     <!-- external CSS link -->
     <!-- Remember to add the dot if not located in the same folder -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
 
     <!-- favicon link -->
     <!-- Use an emoji as a favicon, just change the emoji (start key + . key) -->
@@ -37,145 +38,171 @@
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <img src="" alt="logo brand Yira Linares">
-            <div class="nav-sections">
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
-            </div>
-            <button class="nav-mode">
-                <img src="" alt="">
-                <p>Light Mode</p>
-            </button>
-        </nav>
-        <section class="hero">
-            <div class="hero-left">
-                <h1>Welcome to my coding playground</h1>
-                <p>Where I build things, break them and learn!</p>
-            </div>
-            <div class="hero-right">
-                <img src="" alt="Yira's avatar">
-            </div>
-            <div class="hero-circle"></div>
-        </section>
+        <div class="padding-general">
+            <nav>
+                <img class="nav-logo" src="./assets/img/Logo.png" alt="logo brand Yira Linares">
+                <div class="nav-sections">
+                    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">#TheBlog</a>
+                    <a href="">Contact</a>
+                </div>
+                <button class="nav-mode">
+                    <img src="./assets/img/Sun.png" alt="">
+                    <p>Light Mode</p>
+                </button>
+            </nav>
+            <section class="hero">
+                <div class="hero-left">
+                    <h1>Welcome<br>to my <span>coding playground</span></h1>
+                    <p>Where I build things, break them and learn!</p>
+                </div>
+                <div class="hero-right">
+                    <img src="./assets/img/yira-avatar.png" alt="Yira's avatar">
+                    <div class="hero-circle"></div>
+                </div>
+                
+            </section>
+        </div>   
     </header>
     <main>
-        <section class="about">
+        <!--About-->
+        <section class="about padding-general">
             <div class="about-logos">
-                <img src="" alt="">
+                <img src="./assets/img/React-icon 1.png" alt="React-icon">
+                <img src="./assets/img/saass.png" alt="saass">
+                <img src="./assets/img/figma.png" alt="figma">
+                <img src="./assets/img/html-5.png" alt="html-5">
+                <img src="./assets/img/css.png" alt="css logo">
+                <img src="./assets/img/javascript.png" alt="javascript logo">
+                <img src="./assets/img/sql.png" alt="sql logo">
+                <img src="./assets/img/command-line.png" alt="command line logo">
             </div>
             <div class="about-text">
                 <h3>Hi! I’m Yira 👋</h3>
-                <p>
-                    This is my little corner of the internet where I explore programming, build small projects, and enjoy
+                <p class="about-text-slogan">
+                    This is my little corner of the internet where I explore programming, build small projects, and
+                    enjoy
                     the process of learning by doing.</p>
                 <p>
-                    I code because I’m curious, because I like trying ideas, breaking things, fixing them, and understanding how they work.
+                    I code because I’m curious, because I like trying ideas, breaking things, fixing them, and
+                    understanding how they work.
                 </p>
                 <p>
-                    Most of the projects you’ll find here are experiments: some are simple, some are messy and all of them are part of my learning journey.
+                    Most of the projects you’ll find here are experiments: some are simple, some are messy and all of
+                    them are part of my learning journey.
                 </p>
                 <p>
-                    When I’m not coding, I enjoy creating, learning new things, and turning ideas into something tangible.
+                    When I’m not coding, I enjoy creating, learning new things, and turning ideas into something
+                    tangible.
                 </p>
                 <p>
                     Thanks for stopping by 🤎
                 </p>
-                <img src="" alt="Yira's signature">
+                <img src="./assets/img/signature.png" alt="Yira's signature">
             </div>
         </section>
-        <section class="projects">
-            <div class="filters">
-                <button class="filter">Websites</button>
-                <button class="filter">Games</button>
-                <button class="filter filer-active">All</button>
-            </div>
-            <div class="projects-cards">
-                <!--Projects-->
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
-                    </div>
-                    <div class="card"></div>
+        <!--Projects-->
+        <section class="container">
+            <div class="projects padding-general">
+                <div class="filters">
+                    <button class="filter">Websites</button>
+                    <button class="filter">Games</button>
+                    <button class="filter filer-active">All</button>
                 </div>
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
+                <div class="projects-cards">
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
                     </div>
-                    <div class="card"></div>
-                </div>
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
                     </div>
-                    <div class="card"></div>
-                </div>
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
                     </div>
-                    <div class="card"></div>
-                </div>
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
                     </div>
-                    <div class="card"></div>
-                </div>
-                <div class="project">
-                    <p class="project-name">Personal Portfolio</p>
-                    <div class="project-description">
-                        <p class="project-type">Codecademy</p>
-                        <p class="project-id">08</p>
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
                     </div>
-                    <div class="card"></div>
+                    <div class="project">
+                        <p class="project-name">Personal Portfolio</p>
+                        <div class="project-description">
+                            <p class="project-type">Codecademy</p>
+                            <p class="project-id">08</p>
+                        </div>
+                        <div class="card"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <h2 class="contact-title">
-                <span class="muted">Let’s talk about a project,</span>
-                <span class="highlight">collaboration</span>
-                <span class="muted">or an idea you may have</span>
-            </h2>
-            <form method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="submitted-name" autocomplete="name">
-                <button>Send!</button>
-            </form>
-        </section>
-        <footer>
-            <div>
-                <img src="" alt="logo">
-            </div>
-            <div>
-                <p>2025 Yira Linares</p>
-                <div>
-                    <p>With love from Spain</p>
-                    <img src="" alt="heart">
+        <!--Contact-->
+        <section class="contact-background-deep">
+            <div class="contact-background">
+                <div class="contact padding-general">
+                    <h2 class="contact-title">
+                        <span>Let’s talk about <br>a project,</span>
+                        <span class="highlight">collaboration</span>
+                        <span><br>or an idea you may have</span>
+                    </h2>
+                    <form method="POST">
+                        <div class="n-m-container">
+                            <div class="name-container">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="submitted-name" autocomplete="name">
+                            </div>
+                            <div class="message-container">
+                                <label for="message">Drop a line!</label>
+                                <textarea id="message" name="textarea" rows="10" cols="50"></textarea>
+                            </div>
+                            <button>Send!</button>
+                        </div>   
+                    </form>
                 </div>
             </div>
-            <div>
-                <img src="" alt="github">
-                <img src="" alt="twitter">
-                <img src="" alt="linkedin">
-            </div>
-
-        </footer>
+        </section>
     </main>
-
-
+    <!--Footer-->
+    <footer class="padding-general">
+        <div>
+            <img src="./assets/img/Logo.png" alt="logo" class="logo-footer">
+        </div>
+        <div class="footer-property">
+            <p>2025 <b>Yira Linares</b></p>
+            <p>With love from <b>Spain</b> ♥</p>
+        </div>
+        <div class="footer-socials">
+            <img src="./assets/img/github.png" alt="github">
+            <img src="./assets/img/twitter.png" alt="twitter">
+            <img src="./assets/img/linkedin.png" alt="linkedin">
+        </div>
+    </footer>
     <script src="" async defer></script>
 </body>
 

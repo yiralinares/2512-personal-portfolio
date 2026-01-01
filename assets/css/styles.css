@@ -1,0 +1,284 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/*----REM HACK----*/
+html { font-size: 62.5%; }
+
+/*-----BASE STYLES-----*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ECE92B;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-mode, nav, .hero, header, .about, .projects, .project-cards, .contact, footer, main {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+}
+
+.padding-general {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+header {
+    background-color: white;
+    color: #5F1010;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 0 0 7rem 7rem;
+    box-shadow: 0 4px 87px 2px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 142rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.nav-logo {
+    width: 50px;
+}
+
+.nav-sections {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-sections a {
+    color: #5F1010;
+    font-weight: 700;
+}
+
+button.nav-mode {
+    background: transparent;
+    border-width: 0;
+    color: #989622;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+button.nav-mode img {
+    width: .90rem;
+}
+
+.hero {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-left {
+    width: 60%;
+    height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-left h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: clamp(3rem, 8vw, 6.5rem);
+    text-align: right;
+    color: #989622;
+    letter-spacing: -0.3rem;
+}
+.hero-left span {
+    color: #5F1010;
+}
+
+.hero-left p {
+    font-size: clamp(1rem, 2.75vw, 1.75rem);
+    text-align: right;
+    margin-top: 3rem;
+    color: #989622;
+    font-weight: 600;
+}
+
+.hero-right {
+    height: 83vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: fit-content;
+}
+
+.hero-right img {
+    width: 75%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-circle {
+    background-color: #ECE92B;
+    position: absolute;
+    z-index: 1;
+    width: clamp(260px, 40vw, 420px);
+    height: clamp(260px, 40vw, 420px);
+    border-radius: 50%;
+    right: 4rem;
+    bottom: 5rem;
+   
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    color: #5F1010;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    gap: 6rem;
+    width: 80%;
+
+}
+
+.about h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-text-slogan {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects {
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.contact {
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 10rem 2rem 10rem;
+}
+
+.contact-background {
+    width: 100vw;
+    background-color: #ECE92B;  
+    border-radius: 120px 120px 0 0;
+
+}
+
+.contact-background-deep {
+    background-color: white;
+}
+
+.contact-title {
+    color: #989622;
+    font-size: 5rem;
+    line-height: 4.7rem;
+    font-weight: 650;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.highlight {
+    color: #5F1010;
+}
+
+form {
+    background-color: #5F1010;
+    width: 85%;
+    border-radius: 40px;
+    color: white;
+    padding: 5rem;
+}
+
+#name {
+    border-radius: 5rem;
+    border-width: 0;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.name-container, .message-container {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+
+#message {
+    border-radius: 1rem;
+    border-width: 0;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.n-m-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact button {
+    background-color: #ECE92B;
+    border-width: 0;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 6rem;
+    font-size: .9rem;
+    color: #5F1010;
+    font-weight:700;
+}
+
+footer {
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+.footer-socials img {
+    width: 23px;
+}
+
+.footer-property {
+    text-align: center;
+    color: #5F1010;
+    font-size: .75rem;
+}
